@@ -1,0 +1,425 @@
+:root{
+    --f94: 94px;
+    --f40: 40px;
+    --f30: 30px;
+    --f25: 25px;
+    --mainColor: #231A36;
+    --secColor: #DE2879;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: var(--f94);
+}
+
+h2{
+    font-size: var(--f40);
+}
+
+h3{
+    font-size: var(--f30);
+}
+
+h4{
+    font-size: var(--f25);
+}
+
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    max-width: 1115px;
+    margin: 0px auto;
+    padding: 0px 20px;
+}
+
+.clients,
+.solutions,
+.social-media,
+.solutions-need,
+.happy-clients,
+.newsletter{
+    padding: 80px 0px;
+}
+
+/* Shared Style */
+
+.tc{
+    text-align: center;
+}
+
+.text-break{
+    display: block;
+}
+
+.sec-heading{
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.sec-heading h2{
+    color: var(--mainColor);
+    margin-bottom: 8px;
+    position: relative;
+    display: inline-block;
+}
+
+.sec-heading h2 img{
+    position: absolute;
+    top: -35px;
+    right: -55px;
+}
+.sec-heading p{
+    color: #B2B7BE;
+}
+
+.my-btn{
+    padding: 15px 25px;
+    border-radius: 30px;
+    color: #000000;
+    display: inline-block;
+}
+
+.btn-trans{
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: all 0.30s;
+    color: #000000;
+}
+
+.btn-solid{
+    background-color: var(--mainColor);
+    color: #ffffff !important;
+    transition: all 0.30s;
+}
+
+.btn-solid:hover{
+    background-color: #4b27ff;
+}
+
+.btn-trans:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+/* Shared Style */
+
+
+/* Header Start */
+.header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px;
+}
+
+.logo a{
+    color: #ffffff;
+}
+
+.header-wrapper h5{
+    font-size: 35px;
+}
+
+.header-wrapper>ul {
+    display: flex;
+    gap: 35px;
+}
+
+.header-wrapper ul li a{
+    color: #ffffff;
+}
+
+.header-wrapper>ul>li:first-child{
+    position: relative;
+}
+
+.header-wrapper>ul>li:first-child>ul{
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    background-color: #4b27ff;
+    width: 150px;
+    display: none;
+}
+
+.header-wrapper>ul>li:first-child:hover ul{
+    display: block;
+}
+
+.header-wrapper>ul>li:first-child>ul li a{
+    color: #ffffff;
+    display: inline-block;
+    padding: 15px 0px 15px 15px;
+    width: 100%;
+}
+
+
+/* Header End */
+
+/* Banner Start  */
+.banner{
+    text-align: center;
+    padding: 100px 0px;
+}
+
+.banner h1, .banner p{
+    color: #ffffff;
+}
+
+.banner .btn{
+    margin-top: 35px;
+}
+
+.banner-bg{
+    background:url("../image/bg/bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* Banner End */
+
+
+/* Clients Start */
+.clients-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.clients-wrapper img{
+    width: 150px;
+    height: 35px;
+    object-fit: contain;
+}
+
+.clients-wrapper img:hover{
+    filter: invert();
+}
+
+
+/* Clients End */
+
+/* Solutions Start  */
+/* .solutions-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+} */
+
+.solutions-wrapper>div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.solutions-wrapper>div span{
+    text-transform: uppercase;
+    color: var(--secColor);
+    letter-spacing: 15px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.solutions-wrapper>div h3, .solutions-wrapper>div p{
+    margin-bottom: 15px;
+}
+
+.solutions-wrapper>div img{
+    max-width: 100%;
+}
+
+.solutions-wrapper>div:last-child{
+    margin-bottom: 0px;
+}
+
+.solutions-wrapper>div>div{
+    width: 50%;
+}
+
+
+/* Solutions End */
+
+/* Social Media Start */
+.social-media{
+    background-color: var(--mainColor);
+    color: #ffffff;
+}
+
+.social-media h2 span{
+    color: #ffffff !important;
+}
+.social-media span{
+    color: #7B9292;
+    
+}
+/* Social Media End */
+
+/* Solutions Need Start */
+.solutions-need h5{
+  font-size: 16px;
+  color: #3B3B43;
+}
+/* .solutions-need span:not(.text-break) {
+    font-size: 10px;
+} */
+.solutions-need>div>div:nth-child(2) span{
+    font-size: 10px;
+}
+
+.need-box{
+    position: relative;
+}
+
+.need-box>div{
+    position: absolute;
+    width: 80%;
+    left: 0px;
+    bottom: -70px;
+    background-color: #CBCBCB;
+    padding: 15px;
+}
+
+
+/* Solutions Need End */
+
+
+/* Happy Clients Starts */
+.happy-clients>div>div:last-child p{
+    font-size: 22px;
+    font-style: italic;
+    color: #6D6D6D;
+    font-weight: 500;
+}
+/* Happy Clients End */
+
+
+/* Newsletter Start */
+.newsletter-wrapper{
+    position: relative;
+    background: url("../image/newsletter/bg.svg") no-repeat center;
+    background-size: cover;
+    padding: 80px 0px;
+    border-radius: 25px;
+}
+
+.newsletter-wrapper img:first-child{
+    position: absolute;
+    bottom: 20px;
+    left: -55px;
+    z-index: -1;
+}
+
+.newsletter-wrapper img:last-child{
+    position: absolute;
+    top: -30px;
+    right: -42px;
+    z-index: -1;
+}
+/* Newsletter End */
+
+/* Footer Start */
+footer{
+    padding: 20px 0px;
+}
+footer a{
+    color: #333333;
+}
+/* Footer End */
+
+@media screen and (max-width: 992px){
+    .clients-wrapper{
+        flex-wrap: wrap;
+    }
+    .clients-wrapper img{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+   
+    /* .social-media>div>div:last-child{
+        text-align: center;
+    } */
+
+    .need-box>div h4{
+        font-size: 18px;
+    }
+}
+.test>div>div div{
+    background-color: blue;
+    color: #ffffff;
+}
+@media screen and (max-width: 768px){
+
+    h1{
+        font-size: 50px;
+    }
+
+    .text-break{
+        display: inline;
+    }
+    .header-wrapper>ul,.header-wrapper>div:last-child{
+        display: none;
+    }
+
+    .clients-wrapper img{
+        width: 100%;
+    }
+
+    .solutions-wrapper>div>div{
+        width: 100%;
+        text-align: center;
+    }
+    .solutions-wrapper>div>div img{
+        margin-top: 50px;
+    }
+    .solutions-wrapper>div{
+        flex-direction: column;
+    }
+
+    .solutions-wrapper>div:nth-child(2)>div:first-child{
+        order: 2;
+    }
+    .solutions-wrapper>div:nth-child(2)>div:last-child{
+        order: 1;
+    }
+
+    .need-box{
+        width: 100%;
+        margin-top: 100px;
+    }
+    .need-box>div{
+        width: 100%;
+    }
+    .social-media>div>div:last-child{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 556px){
+    .sec-heading h2 img{
+        right: -20px;
+        width: 35px;
+    }
+
+    h2{
+        font-size: 30px;
+    }
+    h1{
+        font-size: 40px;
+    }
+}
+
